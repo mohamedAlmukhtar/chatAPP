@@ -1,7 +1,10 @@
 import axios from 'axios'
 
+console.log('url:')
+console.log(process.env.baseURL)
+
 const instance = axios.create({
-    baseURL: process.env.baseURL || 'http://localhost:5000'
+    baseURL: ''
 })
 
 export default instance
