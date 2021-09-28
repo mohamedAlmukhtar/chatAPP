@@ -1,0 +1,53 @@
+.server-bar {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    min-width: 70px;
+    background-color: #1c2732;
+    color: white;
+    overflow: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.server-bar::-webkit-scrollbar {
+    display: none;  /*hide scrollbar in chrome */
+}
+
+.server {
+    padding: 6px 10px;
+}
+
+.server-button{
+    margin: 0 auto;
+    overflow: hidden;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    align-items: center;
+    background-color: #2e3540;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 15px;
+}
+
+.server-button:hover {
+    border-radius: 20%;
+    background-color: lightgreen;
+    color: #000;
+}
+
+.server-button:active {
+    position: relative;
+    top: 2px;
+}
+
+#selected-server {
+    border-radius: 20%;
+    background-color: lightgreen;
+    color: #000;
+}

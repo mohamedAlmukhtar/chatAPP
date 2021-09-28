@@ -1,0 +1,35 @@
+.chat-box {
+    flex: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.chat-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 0px 10px 20px 10px;
+    background-color: #ECECEC;
+}
+
+.chat-input > form > input {
+    background: transparent;
+    height: 50px;
+    border: none;
+    width: 100% ;
+    outline-width: 0;
+    font-size: medium;
+}
+
+.chat-input > form {
+    flex: 1;
+}
+
+.chat-input-button {
+    display: none;
+}

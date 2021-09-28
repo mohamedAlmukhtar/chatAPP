@@ -1,0 +1,37 @@
+.user-bar {
+    display: flex;
+    flex-direction: column;
+    color: grey;
+    flex: 0.25;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #f3f3f3;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.user-bar::-webkit-scrollbar {
+    display: none;  /*hide scrollbar in chrome */
+}
+
+.user-header {
+    margin: 20px 10px 10px 10px;
+    font-weight: bolder;
+}
+
+.user {
+    align-items: center;
+    display: flex;
+    margin: 3px;
+    padding: 8px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.user:hover {
+    background-color: #D8D8D8;
+}
+
+.user > h5 {
+    margin-left: 8px;
+}

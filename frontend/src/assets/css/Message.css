@@ -1,0 +1,28 @@
+.message {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.message:hover {
+    background-color: #ECECEC;
+}
+
+.message-info {
+    margin-left: 20px;
+}
+
+.message-info > h4 {
+    font-weight: normal;
+}
+
+.message-info > p {
+    color: grey;
+    font-size: 16px;
+}
+
+.message-timestamp {
+    color: grey;
+    margin-left: 20px;
+    font-size: x-small;
+}

@@ -1,0 +1,62 @@
+.app {
+  display: flex;
+  overflow: hidden;
+}
+
+.channel-symbol {
+  font-size: 21px;
+  padding: 10px;
+  color: grey;
+}
+
+.server-symbol {
+  font-size: 25px;
+  padding: 10px;
+  color: white;
+}
+
+.empty-list {
+  width: 100%;
+  padding: 20px 0;
+  margin-bottom: 30px;
+  opacity: 0.6;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.empty-channel-list {
+  height: 550px;
+  background-image: url('./assets/img/lighthouse.webp');
+  background-size: 120px;
+}
+
+.empty-server-list {
+  height: 400px;
+  background-image: url('./assets/img/spaceman-image.png');
+  background-size: 330px;
+}
+
+.icon:hover {
+  opacity: 0.80;
+  background-color: #D8D8D8;
+  cursor: pointer;
+}
+
+.icon-dark {
+  color: lightgreen;
+}
+
+.placeholder {
+  height: 16px;
+  display: inline-block;
+}
+
+.placeholder-light {
+  width: 450px;
+  background-color: rgb(177, 177, 177);
+}
+
+.placeholder-dark {
+  width: 150px;
+  background-color: rgb(238, 238, 238);
+}
