@@ -29,8 +29,8 @@ app.use(express.static(buildPath))
 //db config
 
 //db config
-const mongoURI = `mongodb+srv://admin:${process.env.MONGO_PASS}@cluster0.isjsj.mongodb.net/chatDB?retryWrites=true&w=majority`
-
+const mongoURI = process.env.MONGODB_URI
+//const mongoURI = `mongodb+srv://admin:${process.env.MONGO_PASS}@cluster0.isjsj.mongodb.net/chatDB?retryWrites=true&w=majority`
 
 mongoose.connect(mongoURI, {
     useCreateIndex: true,
