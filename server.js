@@ -9,7 +9,7 @@ require('dotenv').config()
 
 //app config
 const app = express()
-const port = process.env.PORT || 8002
+const port = process.env.PORT || 5000
 const buildPath = path.join(__dirname, 'frontend', 'build')
 
 const pusher = new Pusher({
@@ -22,8 +22,11 @@ const pusher = new Pusher({
 
 //middlewares
 app.use(express.static(buildPath))
-//app.use(express.json())
+
+app.use(express.json())
 //app.use(cors())
+
+//db config
 
 //db config
 const mongoURI = process.env.MONGODB_URI
