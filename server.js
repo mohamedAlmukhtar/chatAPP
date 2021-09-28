@@ -4,11 +4,13 @@ const cors = require('cors')
 const serverModel = require('./models/server.js')
 const userModel = require('./models/user.js')
 const Pusher = require('pusher')
+const path = require('path');
 require('dotenv').config()
 
 //app config
 const app = express()
-const port = process.env.PORT || 8002
+const port = process.env.PORT || 5000
+const buildPath = path.join(__dirname, 'frontend', 'build')
 
 const pusher = new Pusher({
     appId: process.env.PUSHER_ID,
@@ -19,16 +21,10 @@ const pusher = new Pusher({
 });
 
 //middlewares
-app.use(express.json())
-app.use(cors())
+app.use(express.static(buildPath))
+//app.use(express.json())
+//app.use(cors())
 
-/*
-if (process.env.NODE_ENV === "production"){
-    app.use(express.static('build'))
-    app.get('*', (req, res) => {
-        req.sendFile(path.resolve(__dirname, 'frontend', 'index.js'))
-    })
-}*/
 
 //db config
 
