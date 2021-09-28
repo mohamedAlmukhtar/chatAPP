@@ -9,7 +9,7 @@ require('dotenv').config()
 
 //app config
 const app = express()
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 8002
 const buildPath = path.join(__dirname, 'frontend', 'build')
 
 const pusher = new Pusher({
@@ -25,14 +25,11 @@ app.use(express.static(buildPath))
 //app.use(express.json())
 //app.use(cors())
 
-
-//db config
-
 //db config
 const mongoURI = process.env.MONGODB_URI
-//const mongoURI = `mongodb+srv://admin:${process.env.MONGO_PASS}@cluster0.isjsj.mongodb.net/chatDB?retryWrites=true&w=majority`
+const mongoURL = `mongodb+srv://admin:${process.env.MONGO_PASS}@cluster0.isjsj.mongodb.net/chatDB?retryWrites=true&w=majority`
 
-mongoose.connect(mongoURI, {
+mongoose.connect(mongoURI || mongoURL, {
     useCreateIndex: true,
     useNewUrlParser: true,
     useUnifiedTopology: true
