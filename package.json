@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "node server.js",
-    "install": "cd frontend && npm install && npm run build && cd .."
+    "install": "cd frontend && npm install && npm run build && npm start && cd .."
   },
   "author": "",
   "license": "ISC",
