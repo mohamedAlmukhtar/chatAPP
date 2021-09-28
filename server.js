@@ -22,13 +22,13 @@ const pusher = new Pusher({
 app.use(express.json())
 app.use(cors())
 
-
+/*
 if (process.env.NODE_ENV === "production"){
     app.use(express.static('build'))
     app.get('*', (req, res) => {
         req.sendFile(path.resolve(__dirname, 'frontend', 'index.js'))
     })
-}
+}*/
 
 //db config
 
