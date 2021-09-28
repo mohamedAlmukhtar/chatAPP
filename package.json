@@ -8,7 +8,8 @@
     "npm": "6.14.9"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "install": "cd install && npm install && npm run build && cd .."
   },
   "author": "",
   "license": "ISC",
